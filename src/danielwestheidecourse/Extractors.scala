@@ -32,29 +32,7 @@ object Extractors {
   }
 
 //def unapply(object: S): Option[(T1, ..., Tn)]
-  trait User {
-    def name: String
-    def score: Int
-  }
-  class FreeUser(val name: String, val score: Int, val upgradeProbability: Double)
-    extends User
-  class PremiumUser(val name: String, val score: Int) extends User
-
-  def main(args: Array[String]): Unit = {
-
-    val listUsers: List[User] = List(User("Javi", "Banez", 15), User("Manueal", "Pamdo", 22))
-    println(advance(listUsers))
-
-    println(FreeUser.unapply(new FreeUser("Daniel")))
-
-    val user: User2 = new PremiumUser("Daniel")
-    println(
-      user match {
-      case FreeUser(name) => "Hello " + name
-      case PremiumUser(name) => "Welcome back, dear " + name
-    }
-    )
 
 
-  }
+
 }

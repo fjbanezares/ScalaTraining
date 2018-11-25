@@ -18,16 +18,17 @@ object magicArray {
 
     //funcion isMagic
 
-   formingMagicSquareRec(s,0).get()
+  // formingMagicSquareRec(s,0).get()
+    0
   }
 
-  def isMagic(s:Array[Array[Int]]) : Boolean = s(0,9)
+  def isMagic(s:Array[Array[Int]]) : Boolean = ???
   def addToPosition(s:Array[Array[Int]],num: Int, posX: Int, posY: Int ): Array[Array[Int]] = {
     val clonado = s.clone()
-    val filaEnLizaUpdate = clonado(posX).update(posY,s(posX,posY+num))
+   // val filaEnLizaUpdate = clonado(posX).update(posY,s(posX,posY+num))
     clonado
   }
-  def formingMagicSquareRec(s:Array[Array[Int]], coste:Int): List[Array[Array[Int]],Int]
+  //def formingMagicSquareRec(s:Array[Array[Int]], coste:Int): List[Array[Array[Int]],Int]
 
   def main(args: Array[String]) {
     val stdin = scala.io.StdIn
